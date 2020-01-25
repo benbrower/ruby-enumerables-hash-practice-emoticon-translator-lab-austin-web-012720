@@ -20,16 +20,21 @@ def load_library(file)
   emoticons_hash
 end
 
-def get_japanese_emoticon(file, emote)
+def get_japanese_emoticon(file, emoticon)
   emoticons = load_library(file)
-  if !emoticons[:get_emoticon].has_key?(emote)
+  if !emoticons[:get_emoticon].has_key?(emoticon)
     return "Sorry, but that emoticon was not found"
   else
     return emoticons[:get_meaning][emoticon]
   end
-
 end
 
 def get_english_meaning
   # code goes here
+  emoticons = load_library(file)
+  if !emoticons[:get_emoticon].has_key?(emoticon)
+    return "Sorry, but that emoticon was not found"
+  else
+    return emoticons[:get_meaning][emoticon]
+  end
 end
