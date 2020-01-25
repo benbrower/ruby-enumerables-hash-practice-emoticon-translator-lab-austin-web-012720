@@ -17,11 +17,11 @@ def load_library(file)
       emoticons_hash[:get_meaning][array.last] = key
     end
   end
-  emoticons_hash  
+  emoticons_hash
 end
 
 def get_japanese_emoticon
-  
+
 end
 
 def get_english_meaning
